@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <h2>Welcome to My Portfolio</h2>
+    <p>Explore my work and get to know me!</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <div class="profile">
+      <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic"> <!-- Add class here -->
+      <div class="profile-info">
+          <h3>Chizzy</h3>
+          <p>A passionate developer with experience in creating web applications. I love to explore new technologies and improve my skills. In my free time, I enjoy hiking and photography.</p>
+          <a href="your-resume.pdf" class="btn" target="_blank">Download Resume</a>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="showDetails('Project 1', 'Description of project 1', 'img/project1.jpg')">
+        <img src="img/project1.jpg" alt="Project 1">
+        <h3>Machine Learning</h3>
+        <p>Still Learning about Machine Learning topic.</p>
+      </div>
+      <div class="project-card" onclick="showDetails('Project 1', 'Description of project 1', 'img/project1.jpg')">
+        <img src="img/project2.jpg" alt="Project 1">
+        <h3>Python</h3>
+        <p>Still Learning in deepth with neural network logic.</p>
+    </div>
+      <div class="project-card" onclick="showDetails('Project 3', 'Description of project 3', 'img/project3.jpg')">
+        <img src="img/project3.jpg" alt="Project 3">
+        <h3>Project JavaScript</h3>
+        <p>Chatbot Whatsapp using javascript and pterodactyl as a docker.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-set">
+      <div class="skill"><i class="fas fa-code"></i> HTML</div>
+      <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="skill"><i class="fab fa-react"></i> React</div>
+      <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"A great developer! Helped us bring our vision to life!"</p>
+      <h4>- William</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Exceptional skills and a fantastic communicator!"</p>
+      <h4>- Teo</h4>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:example@example.com">enterprise@lieyan.my.id</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/yanda.ee" target="_blank">@yanda.ee</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Chizzy. All rights reserved.</p>
+  </footer>
+
+  <!-- Project Details Modal -->
+<!-- Project Details Modal -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="Project Detail">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
